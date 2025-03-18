@@ -60,7 +60,7 @@ function App() {
           {matrixSize != 0 && (
             <div className="flex flex-row justify-center items-center ml-20">
               <div className="w-auto flex flex-row justify-center items-center">
-                <p className="text-black font-mono text-xl">POINTS:</p>
+                <p className="text-black font-mono text-xl">SCORE:</p>
                 <div className="w-4" />
                 <span className="text-white text-4xl mr-6 ">{points}</span>
               </div>
