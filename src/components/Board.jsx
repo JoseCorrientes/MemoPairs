@@ -99,12 +99,12 @@ const Board = () => {
 
   let classCard =
     size == 4
-      ? ` w-1/4 h-1/4 bg-blue-300 `
+      ? ` w-1/4 h-1/4  `
       : size == 6
-      ? ` w-1/6 h-1/6 bg-blue-300`
+      ? ` w-1/6 h-1/6 `
       : size == 8
-      ? ` w-1/8 h-1/8 bg-blue-300`
-      : ` w-1/10 h-1/10 bg-blue-300`;
+      ? ` w-1/8 h-1/8 `
+      : ` w-1/10 h-1/10`;
 
   return (
     <div className="flex flex-row flex-wrap  w-full h-full ">

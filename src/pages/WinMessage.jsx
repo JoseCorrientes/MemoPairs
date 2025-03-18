@@ -10,6 +10,7 @@ import {
 import { Link } from "react-router-dom";
 import sounds from "../assets/sounds/sounds";
 import { Howl } from "howler";
+import backgroundimage from "../assets/wallpaper/wallpaper";
 
 const WinMessage = () => {
   const dispatch = useDispatch();
@@ -39,7 +40,10 @@ const WinMessage = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center w-full h-full bg-blue-300 border-2 border-black">
+    <div className="flex flex-col justify-center items-center w-full h-full  bg-cover bg-center bg-no-repeat border-black"
+         style={{ backgroundImage: `url(${backgroundimage['wall']}` }}
+    
+    >
       {currentRoundWinMessage < roundsWinMEssage && (
         <div className="flex text-center flex-col p-8 border-2 border-blue-200 bg-blue-300 shadow-lg shadow-zinc-800">
           <h1 className="text-center text-black text-2xl font-mono mb-5">
